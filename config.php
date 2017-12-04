@@ -6,4 +6,4 @@ define("DB_PASS", "root");
 define("DB_NAME", "shareboard");
 
 define("ROOT_PATH", "/");
-define("ROOT_URL", "http://localhost/php.dev");
+define("ROOT_URL", "http://localhost/");

@@ -11,6 +11,7 @@ abstract class Model{
 		$this->stmt = $this->dbh->prepare($query);
 	}
 
+
 	public function bind($param, $value, $type = null){
  		if (is_null($type)) {
   			switch (true) {
