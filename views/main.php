@@ -26,12 +26,21 @@
           </li>
         </ul>
         <ul class="navbar-nav ml-auto">
+        <?php if(isset($_SESSION['is_logged_in'])) : ?>
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo ROOT_URL; ?>users/login">Welcome <?php echo $_SESSION['user_data']['name']; ?> <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo ROOT_URL; ?>users/logout">Logout</a>
+          </li>    
+        <?php else : ?>
           <li class="nav-item">
             <a class="nav-link" href="<?php echo ROOT_URL; ?>users/login">Login <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="<?php echo ROOT_URL; ?>users/register">Register</a>
           </li>
+        <?php endif; ?>
         </ul>
       </div>
     </nav>
