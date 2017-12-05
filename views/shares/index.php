@@ -1,6 +1,8 @@
 <div>
+    <?php if(isset($_SESSION['is_logged_in'])) : ?>
     <br>
-    <a class="btn btn-success btn-share" href="<?php echo ROOT_PATH; ?>shares/add">Share</a>
+    <a class="btn btn-success btn-share btn-lg" href="<?php echo ROOT_PATH; ?>shares/add">Share</a>
+    <?php endif; ?>
     <br>
     <?php foreach($viewmodel as $item) : ?>
     <br>
@@ -10,7 +12,7 @@
             <hr>
             <p><?php echo $item['body']; ?></p>
             <br>
-            <a class="btn btn-info" href="<?php echo $item['link']; ?>" target="_blank">Go to Website</a>
+            <a class="btn btn-info" href="<?php echo $item['link']; ?>" target="_blank">More info...</a>
         </div>
     <?php endforeach; ?>
 </div>

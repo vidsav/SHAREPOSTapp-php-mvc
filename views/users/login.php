@@ -14,7 +14,7 @@
             <label>Password</label>
             <input type="password" name="password" class="form-control">
           </div>
-          <button type="submit" name="submit" class="btn btn-success" value="submit">Submit</button>
+          <button type="submit" name="submit" class="btn btn-success" value="submit">Login</button>
           <a class="btn btn-danger" href="<?php echo ROOT_PATH; ?>shares">Cancel</a>
         </form>
     </div>

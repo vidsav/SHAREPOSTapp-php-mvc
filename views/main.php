@@ -24,6 +24,9 @@
           <li class="nav-item">
             <a class="nav-link" href="<?php echo ROOT_URL; ?>shares">Share</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo ROOT_URL; ?>shares">Contact Us</a>
+          </li>
         </ul>
         <ul class="navbar-nav ml-auto">
         <?php if(isset($_SESSION['is_logged_in'])) : ?>
@@ -46,6 +49,7 @@
     </nav>
         <div class="container">      
             <div class="row">
+                <?php Messages::display(); ?>
                 <?php require($view); ?>
             </div>    
         </div>
