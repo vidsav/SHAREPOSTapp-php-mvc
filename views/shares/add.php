@@ -1,7 +1,7 @@
-<div class="container add-share">
+<div class="container">
 <div class="row">
     <div class="col-md-12">
-        <h1>Share something</h1>
+        <h2>Share something</h2>
         <hr class="my-4">
     </div>
     <div class="col-md-12">
@@ -24,5 +24,5 @@
     </div>
 </div>
 </div>
-</div>
+
 
