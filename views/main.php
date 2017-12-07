@@ -25,7 +25,7 @@
             <a class="nav-link" href="<?php echo ROOT_URL; ?>shares">Share</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo ROOT_URL; ?>shares">Contact Us</a>
+            <a class="nav-link" href="<?php echo ROOT_URL; ?>contact">Contact Us</a>
           </li>
         </ul>
         <ul class="navbar-nav ml-auto">
@@ -49,6 +49,7 @@
     </nav>
         <div class="container">      
             <div class="row">
+                <br>
                 <?php Messages::display(); ?>
                 <?php require($view); ?>
             </div>    
